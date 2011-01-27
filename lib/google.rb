@@ -1,38 +1,38 @@
- module Google
- def google_map(element, options = {})
-        default_options = {
-          :map_type => 'ROADMAP',
-          :lat => 36.3,
-          :lng => 11.9,
-          :height => '400px',
-          :width => '100%',
-          :zoom => 2,
-          :event => false,
-          :display => 'head',
-          :action => 'show',
-          :search => false,
-          :form_elements => 'asset',
-          :class => 'mark_on_map_frame',
-          :arrayPoint => false
-        }
+module Google
+  def google_map(element, options = {})
+    default_options = {
+      :map_type => 'ROADMAP',
+      :lat => 36.3,
+      :lng => 11.9,
+      :height => '400px',
+      :width => '100%',
+      :zoom => 2,
+      :event => false,
+      :display => 'head',
+      :action => 'show',
+      :search => false,
+      :form_elements => 'asset',
+      :class => 'mark_on_map_frame',
+      :arrayPoint => false
+    }
 
-        @element = element.to_s
-        @settings = default_options.merge(options).stringify_keys!
-        content = ''
+    @element = element.to_s
+    @settings = default_options.merge(options).stringify_keys!
+    content = ''
 
-        display = @settings['display']
-        case display.to_sym
-        when :head
-          content_for :google_maps do
-            head = script_body
-          end
-        when :inline
-          content << script_body
-        end
-        content << content_tag(:div, '', :class => @settings['class'], :id => (@settings['event'] ? (@settings['event'][:container].blank? ? @element : '') : @element), :style => "clear:both; width: #{@settings['width']}; height: #{@settings['height']}; margin:0 auto;")
+    display = @settings['display']
+    case display.to_sym
+    when :head
+      content_for :google_maps do
+        head = script_body
       end
- def script_body
-        <<-EOF
+    when :inline
+      content << script_body
+    end
+    content << content_tag(:div, '', :class => @settings['class'], :id => (@settings['event'] ? (@settings['event'][:container].blank? ? @element : '') : @element), :style => "clear:both; width: #{@settings['width']}; height: #{@settings['height']}; margin:0 auto;")
+  end
+  def script_body
+    <<-EOF
             <script type="text/javascript">
 
               var map;
@@ -65,8 +65,22 @@
                map = new google.maps.Map(document.getElementById("#{@element}"),myOptions);
                
               }
-
+              #{create_marker}
             </script>
-        EOF
-      end
- end
+    EOF
+  end
+
+  def create_marker
+    create_marker = <<-EOF
+
+      function create_marker(lat, lang, info_text){
+        point_marker =  new google.maps.LatLng(lat, lang)
+        marker = new google.maps.Marker({position:point_marker, title:info_text});
+        marker.setMap(map)
+
+      }
+
+    EOF
+    return create_marker
+  end
+end
