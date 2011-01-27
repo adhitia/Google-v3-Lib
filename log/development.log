@@ -1,0 +1,253 @@
+  [4;36;1mSQL (228.6ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (17.6ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomesController#index (for 192.168.85.1 at 2011-01-27 10:53:39) [GET]
+Rendering homes/index
+Completed in 24ms (View: 23, DB: 246) | 200 OK [http://192.168.85.129/]
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomesController#index (for 192.168.85.1 at 2011-01-27 10:57:41) [GET]
+Rendering template within layouts/application
+Rendering homes/index
+Completed in 11ms (View: 10, DB: 1) | 200 OK [http://192.168.85.129/]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomesController#index (for 192.168.85.1 at 2011-01-27 11:00:23) [GET]
+Rendering template within layouts/application
+Rendering homes/index
+
+ActionView::TemplateError (undefined method `google_map' for #<ActionView::Base:0x98248a4>) on line #2 of app/views/homes/index.html.erb:
+1: ngut
+2: <%= show_google_map %>
+
+    app/helpers/application_helper.rb:5:in `show_google_map'
+    app/views/homes/index.html.erb:2
+
+Rendered rescues/_trace (141.8ms)
+Rendered rescues/_request_and_response (1.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomesController#index (for 192.168.85.1 at 2011-01-27 11:01:26) [GET]
+Rendering template within layouts/application
+Rendering homes/index
+
+ActionView::TemplateError (undefined method `google_map' for #<ActionView::Base:0x9e218c4>) on line #2 of app/views/homes/index.html.erb:
+1: ngut
+2: <%= show_google_map %>
+
+    app/helpers/application_helper.rb:5:in `show_google_map'
+    app/views/homes/index.html.erb:2
+
+Rendered rescues/_trace (43.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomesController#index (for 192.168.85.1 at 2011-01-27 11:01:29) [GET]
+Rendering template within layouts/application
+Rendering homes/index
+
+ActionView::TemplateError (undefined method `google_map' for #<ActionView::Base:0x9849f14>) on line #2 of app/views/homes/index.html.erb:
+1: ngut
+2: <%= show_google_map %>
+
+    app/helpers/application_helper.rb:5:in `show_google_map'
+    app/views/homes/index.html.erb:2
+
+Rendered rescues/_trace (96.4ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomesController#index (for 192.168.85.1 at 2011-01-27 11:01:29) [GET]
+Rendering template within layouts/application
+Rendering homes/index
+
+ActionView::TemplateError (undefined method `google_map' for #<ActionView::Base:0x9d7ddc8>) on line #2 of app/views/homes/index.html.erb:
+1: ngut
+2: <%= show_google_map %>
+
+    app/helpers/application_helper.rb:5:in `show_google_map'
+    app/views/homes/index.html.erb:2
+
+Rendered rescues/_trace (43.9ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomesController#index (for 192.168.85.1 at 2011-01-27 11:01:31) [GET]
+Rendering template within layouts/application
+Rendering homes/index
+
+ActionView::TemplateError (undefined method `google_map' for #<ActionView::Base:0x970ebf4>) on line #2 of app/views/homes/index.html.erb:
+1: ngut
+2: <%= show_google_map %>
+
+    app/helpers/application_helper.rb:5:in `show_google_map'
+    app/views/homes/index.html.erb:2
+
+Rendered rescues/_trace (43.0ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomesController#index (for 192.168.85.1 at 2011-01-27 11:06:33) [GET]
+Rendering template within layouts/application
+Rendering homes/index
+
+ActionView::TemplateError (undefined local variable or method `update_markers' for #<ActionView::Base:0x9cbf3b4>) on line #2 of app/views/homes/index.html.erb:
+1: ngut
+2: <%= show_google_map %>
+
+    lib/google.rb:52:in `script_body'
+    lib/google.rb:30:in `google_map'
+    app/helpers/application_helper.rb:5:in `show_google_map'
+    app/views/homes/index.html.erb:2
+
+Rendered rescues/_trace (48.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomesController#index (for 192.168.85.1 at 2011-01-27 11:06:36) [GET]
+Rendering template within layouts/application
+Rendering homes/index
+
+ActionView::TemplateError (undefined local variable or method `update_markers' for #<ActionView::Base:0x9feb59c>) on line #2 of app/views/homes/index.html.erb:
+1: ngut
+2: <%= show_google_map %>
+
+    lib/google.rb:52:in `script_body'
+    lib/google.rb:30:in `google_map'
+    app/helpers/application_helper.rb:5:in `show_google_map'
+    app/views/homes/index.html.erb:2
+
+Rendered rescues/_trace (42.3ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomesController#index (for 192.168.85.1 at 2011-01-27 11:06:38) [GET]
+Rendering template within layouts/application
+Rendering homes/index
+
+ActionView::TemplateError (undefined local variable or method `update_markers' for #<ActionView::Base:0x9c5ebcc>) on line #2 of app/views/homes/index.html.erb:
+1: ngut
+2: <%= show_google_map %>
+
+    lib/google.rb:52:in `script_body'
+    lib/google.rb:30:in `google_map'
+    app/helpers/application_helper.rb:5:in `show_google_map'
+    app/views/homes/index.html.erb:2
+
+Rendered rescues/_trace (96.1ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomesController#index (for 192.168.85.1 at 2011-01-27 11:06:39) [GET]
+Rendering template within layouts/application
+Rendering homes/index
+
+ActionView::TemplateError (undefined local variable or method `update_markers' for #<ActionView::Base:0x9f2679c>) on line #2 of app/views/homes/index.html.erb:
+1: ngut
+2: <%= show_google_map %>
+
+    lib/google.rb:52:in `script_body'
+    lib/google.rb:30:in `google_map'
+    app/helpers/application_helper.rb:5:in `show_google_map'
+    app/views/homes/index.html.erb:2
+
+Rendered rescues/_trace (42.7ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomesController#index (for 192.168.85.1 at 2011-01-27 11:06:39) [GET]
+Rendering template within layouts/application
+Rendering homes/index
+
+ActionView::TemplateError (undefined local variable or method `update_markers' for #<ActionView::Base:0x9c0ed5c>) on line #2 of app/views/homes/index.html.erb:
+1: ngut
+2: <%= show_google_map %>
+
+    lib/google.rb:52:in `script_body'
+    lib/google.rb:30:in `google_map'
+    app/helpers/application_helper.rb:5:in `show_google_map'
+    app/views/homes/index.html.erb:2
+
+Rendered rescues/_trace (93.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomesController#index (for 192.168.85.1 at 2011-01-27 11:06:58) [GET]
+Rendering template within layouts/application
+Rendering homes/index
+Completed in 4ms (View: 2, DB: 1) | 200 OK [http://192.168.85.129/]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomesController#index (for 192.168.85.1 at 2011-01-27 11:08:57) [GET]
+Rendering template within layouts/application
+Rendering homes/index
+Completed in 4ms (View: 2, DB: 1) | 200 OK [http://192.168.85.129/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomesController#index (for 192.168.85.1 at 2011-01-27 11:09:34) [GET]
+Rendering template within layouts/application
+Rendering homes/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://192.168.85.129/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomesController#index (for 192.168.85.1 at 2011-01-27 11:10:00) [GET]
+Rendering template within layouts/application
+Rendering homes/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://192.168.85.129/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomesController#index (for 192.168.85.1 at 2011-01-27 11:10:13) [GET]
+Rendering template within layouts/application
+Rendering homes/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://192.168.85.129/]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomesController#index (for 192.168.85.1 at 2011-01-27 11:11:48) [GET]
+Rendering template within layouts/application
+Rendering homes/index
+Completed in 12ms (View: 9, DB: 1) | 200 OK [http://192.168.85.129/]

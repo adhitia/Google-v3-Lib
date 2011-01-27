@@ -1,0 +1,6 @@
+development:
+  adapter: mysql
+  encoding: utf8
+  database: isar_kt
+  username: root
+  password: root	
